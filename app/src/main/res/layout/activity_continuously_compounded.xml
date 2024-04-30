@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContinuouslyCompoundedActivity">
+
+    <ScrollView
+        android:layout_above="@id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/native_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:minHeight="300dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/yearGrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/yearGrowInput"
+                    android:layout_alignParentStart="true"
+                    android:labelFor="@+id/yearGrowInput"
+                    android:text="@string/years_grow" />
+
+                <EditText
+                    android:id="@+id/yearGrowInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/interestRateInput"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberSigned"
+                    android:singleLine="true"
+                    android:importantForAutofill="no">
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/interestRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/interestRateInput"
+                    android:layout_alignParentStart="true"
+                    android:labelFor="@+id/interestRateInput"
+                    android:text="@string/interest_rate" />
+
+
+                <EditText
+                    android:id="@+id/interestRateInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/currentPrincipleInput"
+                    android:layout_below="@+id/yearGrowInput"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:id="@+id/currentPrinciple"
+                    android:labelFor="@id/currentPrincipleInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/interestRate"
+                    android:layout_marginTop="33dp"
+                    android:text="@string/current_principle" />
+
+                <EditText
+                    android:id="@+id/currentPrincipleInput"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/currentPrinciple"
+                    android:layout_marginStart="22dp"
+                    android:layout_toEndOf="@+id/currentPrinciple"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:importantForAutofill="no" />
+
+                <include
+                    android:id="@+id/include"
+                    layout="@layout/testing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/currentPrinciple"
+                    android:layout_marginTop="54dp" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/include"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="44dp"
+                    android:text="@string/total" />
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:minHeight="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" />
+
+</RelativeLayout>

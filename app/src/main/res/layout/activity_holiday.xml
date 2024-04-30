@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HolidayActivity">
+
+    <ScrollView
+        android:layout_above="@id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_axis"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/andaman_amp_and_nicobar"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/q2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_border2"
+                android:contentDescription="@string/ad"
+                android:src="@drawable/qg6" />
+
+            <LinearLayout
+                android:id="@+id/ll_icic"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/bihar"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:contentDescription="@string/continue_next"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_idbi"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/dadra_amp_nagar_haveli"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_border2"
+                android:contentDescription="@string/ad"
+                android:src="@drawable/qrbn4" />
+
+            <LinearLayout
+                android:id="@+id/ll_idfc"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/gujrat"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sbi"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/andhar_pradesh"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_border2"
+                android:contentDescription="@string/ad"
+                android:src="@drawable/qrbn5" />
+
+            <LinearLayout
+                android:id="@+id/ll_bob"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/chandigarh"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_hdfc"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/puducherry"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/q5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_border2"
+                android:contentDescription="@string/ad"
+                android:src="@drawable/qrbn6" />
+
+            <LinearLayout
+                android:id="@+id/ll_boi"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/west_bengal"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_uboi"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/tripura"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_kotak"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/himachal_pradesh"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/q6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_border2"
+                android:contentDescription="@string/ad"
+                android:src="@drawable/qg1" />
+
+            <LinearLayout
+                android:id="@+id/ll_punjabnational"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/rajasthan"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_yes"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/assam"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/q7"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_border2"
+                android:contentDescription="@string/ad"
+                android:src="@drawable/qrbn4" />
+
+            <LinearLayout
+                android:id="@+id/ll_canara"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/new_delhi"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_vijyabank"
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/punjab"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/q8"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_border2"
+                android:contentDescription="@string/ad"
+                android:src="@drawable/qg2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/jharkhand"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/uttar_pradesh"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/karnataka"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/nagaland"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/goa"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/uttrakhand"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/daman_amp_and_diu"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/round_border_blck"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1.0"
+                    android:text="@string/maharatra"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:contentDescription="@string/continue_next"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10sp"
+                    android:background="@drawable/ic_right_arrow"
+                    android:backgroundTint="@color/black"
+                    android:rotation="180.0" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:minHeight="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" />
+    
+</RelativeLayout>

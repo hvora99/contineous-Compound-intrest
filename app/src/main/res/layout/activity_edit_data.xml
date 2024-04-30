@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDataActivity">
+
+    <RelativeLayout
+        android:id="@+id/native_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:minHeight="300dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <EditText
+        android:layout_below="@id/native_ad_container"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editable_item"
+        android:layout_marginTop="25dp"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+    <LinearLayout
+        android:layout_above="@id/banner_container"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_below="@+id/editable_item">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/delete"
+            android:id="@+id/btnDelete"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:minHeight="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" />
+</RelativeLayout>

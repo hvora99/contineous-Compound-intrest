@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanGuide">
+
+    <ScrollView
+        android:layout_above="@id/banner_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5sp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/native_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:minHeight="300dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ic_personal_loan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/what_is_aadharcard_loan_guide"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rounded_border2"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="@string/ad"
+                    android:src="@drawable/qg6" />
+
+                <LinearLayout
+                    android:id="@+id/ic_home_loan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/for_what_purposes_can_it_be_used"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rounded_border2"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="@string/ad"
+                    android:src="@drawable/qrbn4" />
+
+                <LinearLayout
+                    android:id="@+id/ic_education_loan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/which_eligblity_criteria_for_loan"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ic_Creditcard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/how_much_can_one_borrow"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rounded_border2"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="@string/ad"
+                    android:src="@drawable/qrbn6" />
+
+                <LinearLayout
+                    android:id="@+id/ic_business_loan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/from_which_bank_financial_ninstitution_should_one_borrow"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ic_Gold_Loan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/how_do_banks_decide_on_nthe_maximum_amount"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/q5"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/rounded_border2"
+                    android:padding="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="@string/ad"
+                    android:src="@drawable/qrbn5" />
+
+                <LinearLayout
+                    android:id="@+id/ic_car_loan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/what_are_the_common_rates"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ic_bike_loan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/key_documents_required_when_apply"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ic_diff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/difference_between_part_payment_prepayment_and_perclosure"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ic_loanappruv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/approval_process"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ic_credit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/credit_report_and_score"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ic_beni"
+                    android:layout_width="fill_parent"
+                    android:layout_height="56sp"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="7sp"
+                    android:background="@drawable/gray_curve1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10sp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_horizontal"
+                        android:text="@string/how_is_having_a_higher_credit_score_beneficial"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                    android:contentDescription="@string/services"
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5sp"
+                        android:src="@drawable/ss"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:minHeight="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" />
+    
+</RelativeLayout>

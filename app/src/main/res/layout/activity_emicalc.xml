@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Emicalc">
+
+    <ScrollView
+        android:layout_above="@id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/native_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:minHeight="300dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <RadioGroup
+                android:background="@drawable/border"
+                android:id="@+id/calculateGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:id="@+id/compoundInterestWithAnnualAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:checked="false"
+                    android:text="@string/compoundInterestWithAnnualAdd" />
+
+                <RadioButton
+                    android:id="@+id/annual_comp_int"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:checked="false"
+                    android:text="@string/annual_comp_int" />
+
+                <RadioButton
+                    android:id="@+id/simple_interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:checked="false"
+                    android:text="@string/simple_interest" />
+
+                <RadioButton
+                    android:id="@+id/continuously_compound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:checked="false"
+                    android:text="@string/continuously_compound" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/continue_next"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/gray_curve1"
+                android:text="@string/continue_next" />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_border2"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ad"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:background="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/q1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/qg1"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/ad" />
+                    <ImageView
+                        android:id="@+id/q2"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/qg2"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/ad" />
+                    <ImageView
+                        android:id="@+id/q3"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/qg3"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/ad" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/load"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/gray_curve1"
+                android:text="@string/load" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:minHeight="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" />
+
+</RelativeLayout>

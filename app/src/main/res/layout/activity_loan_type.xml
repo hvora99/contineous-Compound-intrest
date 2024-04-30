@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanTypeActivity">
+
+    <ScrollView
+        android:layout_above="@id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/txt_bussiness"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                    android:contentDescription="@string/services"
+                            android:layout_width="80sp"
+                            android:layout_height="80sp"
+                            android:src="@drawable/ic_business" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            tools:ignore="NestedWeights">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="@string/bussiness_loan_guide"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="@string/what_is_bussiness_loan_guide"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="70sp"
+                            android:layout_gravity="center"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            android:text="@string/get_more_details"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2sp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/txt_personal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:contentDescription="@string/services"
+                            android:layout_width="80sp"
+                            android:layout_height="80sp"
+                            android:src="@drawable/ic_personal" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            tools:ignore="NestedWeights">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="@string/personal_loan_guide"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="@string/what_is_personal_loan_guide"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="70sp"
+                            android:layout_gravity="center"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            android:text="@string/get_more_details"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2sp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:id="@+id/native_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:minHeight="300dp"
+                android:gravity="center"
+                android:layout_marginBottom="29dp"
+                android:layout_marginTop="29dp"
+
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/txt_home"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                    android:contentDescription="@string/services"
+                            android:layout_width="80sp"
+                            android:layout_height="80sp"
+                            android:src="@drawable/ic_home" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            tools:ignore="NestedWeights">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="Home Loan Guide"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="What is home Loan Guide ? "
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="70sp"
+                            android:layout_gravity="center"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            android:text="@string/get_more_details"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2sp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_border2"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ad"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:background="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/q1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/qg1"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/ad" />
+                    <ImageView
+                        android:id="@+id/q2"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/qg2"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/ad" />
+                    <ImageView
+                        android:id="@+id/q3"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/qg3"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/ad" />
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/txt_education"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                    android:contentDescription="@string/services"
+                            android:layout_width="80sp"
+                            android:layout_height="80sp"
+                            android:src="@drawable/ic_education" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            tools:ignore="NestedWeights">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="@string/education_loan_guide"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="@string/what_is_education_loan_guide"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="70sp"
+                            android:layout_gravity="center"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            android:text="@string/get_more_details"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2sp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/txt_car"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                    android:contentDescription="@string/services"
+                            android:layout_width="80sp"
+                            android:layout_height="80sp"
+                            android:src="@drawable/ic_car" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            tools:ignore="NestedWeights">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="@string/car_loan_guide"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="@string/what_is_car_loan_guide"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="70sp"
+                            android:layout_gravity="center"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            android:text="@string/get_more_details"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2sp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/txt_gold"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10sp"
+                    android:orientation="horizontal"
+                    android:weightSum="4.0">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                    android:contentDescription="@string/services"
+                            android:layout_width="80sp"
+                            android:layout_height="80sp"
+                            android:src="@drawable/ic_gold" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            tools:ignore="NestedWeights">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="@string/gold_loan_guide"
+                                android:textColor="@android:color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="5sp"
+                                android:layout_weight="1.0"
+                                android:text="@string/what_is_gold_loan_guide"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3.0"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="70sp"
+                            android:layout_gravity="center"
+                            android:background="@color/blue"
+                            android:gravity="center"
+                            android:text="@string/get_more_details"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2sp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:minHeight="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" />
+
+</RelativeLayout>

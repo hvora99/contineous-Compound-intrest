@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntantLoanActivity">
+
+    <ScrollView
+        android:layout_above="@id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/native_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:minHeight="300dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginEnd="16.0dip">
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginEnd="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test1" />
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="8.0dip"
+                    android:layout_marginEnd="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test2" />
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginEnd="16.0dip">
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginEnd="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test4" />
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test5"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="8.0dip"
+                    android:layout_marginEnd="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test5" />
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test6"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test6" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/rounded_border2"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ad"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:background="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/q1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/qg1"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/ad" />
+                    <ImageView
+                        android:id="@+id/q2"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/qg2"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/ad" />
+                    <ImageView
+                        android:id="@+id/q3"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/qg3"
+                        android:layout_margin="15dp"
+                        android:contentDescription="@string/ad" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginEnd="16.0dip">
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test7"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginEnd="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test7" />
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test8"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="8.0dip"
+                    android:layout_marginEnd="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test8" />
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test9"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginEnd="16.0dip">
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test10"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginEnd="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test10" />
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test11"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="8.0dip"
+                    android:layout_marginEnd="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test11" />
+
+                <ImageView
+                    android:contentDescription="@string/services"
+                    android:id="@+id/ic_test12"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginStart="8.0dip"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/test12" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:minHeight="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" />
+
+</RelativeLayout>
